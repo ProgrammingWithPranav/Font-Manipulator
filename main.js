@@ -9,6 +9,16 @@ function setup() {
   pose.on("pose", gotResults);
 }
 
+function gotResults(results) {
+  if(results.length > 0) {
+      console.log(results);
+  }
+}
+
+function modelLoaded() {
+  console.log("Model Loaded");
+}
+
 function draw() {
   background(255, 0, 0);
 }
